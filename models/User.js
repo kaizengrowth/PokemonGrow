@@ -13,7 +13,7 @@ User.findUserPokemon = (userId) => {
     return db.manyOrNone(`
         SELECT * FROM pokemons
         WHERE user_id = $1
-    `, [userId];)
+    `, [userId]);
 };
 
 User.create = (user) => {
