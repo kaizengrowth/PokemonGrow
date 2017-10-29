@@ -21,9 +21,12 @@ h3 {
 }
 
 p {
-    font-size: 22px;
+    font-size: 18px;
     color: darkblue;
 }
+
+
+/* ===== Bottom Navigation Styling ===== */
 
 nav ul {
     position: absolute;
@@ -33,7 +36,7 @@ nav ul {
     display: flex;
     display: space-around;
     width: 100%;
-    border-bottom: 3px solid #2a75bb;
+    border-top: 2px solid #2a75bb;
     background: radial-gradient(lightyellow, #ffcb05, gold);
 }
 
@@ -58,6 +61,11 @@ nav a:hover {
     border: 2px dotted white;
 }
 
+nav a:active {
+    border-radius: 27px;
+    border: 4px dotted white;
+}
+
 .nav_link {
     align-content: center;
 }
@@ -66,10 +74,14 @@ nav a:hover {
     font-size: 1.3em;
 }
 
+
+/* ===== Top Login Form Styling ===== */
+
 .form-page {
     background: linear-gradient( green, #006400, green);
     margin-bottom: 5px;
     padding-top: 8px;
+    padding-bottom: 9px;
     margin-right: -50px;
 }
 
@@ -78,6 +90,18 @@ form input {
     border-radius: 8px;
     margin: 5px;
     padding: 5px;
+}
+
+div a {
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    right: 8px;
+}
+
+a:hover {
+    color: yellow;
 }
 
 .button {
@@ -92,6 +116,14 @@ form input {
 .button:hover {
     background: radial-gradient(darkred, red);
 }
+
+.button:active {
+    border-radius: 12px;
+    margin: 7px;
+}
+
+
+/* ===== Pokemon Grow Logo ===== */
 
 .logo img {
     margin-top: 15px;
