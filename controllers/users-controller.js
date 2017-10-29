@@ -4,11 +4,11 @@ const User = require('../models/User');
 const usersController = {};
 
 // usersController.index = (req, res) => {
-//     User.findUserFlashcards(req.user.id)
-//         .then(flashcards => {
+//     User.findUserScrums(req.user.id)
+//         .then(scrums => {
 //             res.render('user/user-index', {
 //                 user: req.user,
-//                 flashcards: flashcards,
+//                 scrums: scrums,
 //                 auth: (req.user) ? true : false,
 //             })
 //         }).catch(err => {

@@ -16,6 +16,13 @@ User.findUserPokemon = (userId) => {
     `, [userId]);
 };
 
+User.findUserScrum = (userId) => {
+    return db.manyOrNone(`
+        SELECT * FROM scrums
+        WHERE user_id = $1
+    `, [userId]);
+};
+
 User.create = (user) => {
     return db.one(`
         INSERT INTO users
