@@ -1,0 +1,5 @@
+ALTER TABLE pokemons 
+DROP COLUMN type_id;
+
+ALTER TABLE pokemons 
+ADD COLUMN type VARCHAR;

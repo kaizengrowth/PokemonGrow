@@ -19,18 +19,18 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 app.use(cookieParser());
-app.use(session({
-    secret: process.env.SECRET_KEY,
-    resave: false,
-    saveUnitialized: true,
-}));
+// app.use(session({
+//     secret: process.env.SECRET_KEY,
+//     resave: false,
+//     saveUnitialized: true,
+// }));
 app.use(passport.initialize());
 app.use(passport.session());
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log('Listening on port ${PORT}');
-})
+});
 
 app.get('/', (req, res) => {
     res.render('index', {
@@ -38,14 +38,12 @@ app.get('/', (req, res) => {
     });
 });
 
-// const pomRoutes = require('./routes/pom-routes');
-// app.use('/poms', pomRoutes);
-// const pokeRoutes = require('./routes/poke-routes');
-// app.use('/pokes', pokeRoutes);
 const authRoutes = require('./routes/auth-routes');
 app.use('/auth', authRoutes);
 const userRoutes = require('./routes/user-routes');
 app.use('/user', userRoutes);
+const pokemonRoutes = require('./routes/pokemon-routes');
+app.use('/pokemons', pokemonRoutes);
 
 app.use('*', (req, res) => {
     res.status(404).send('Not Found');

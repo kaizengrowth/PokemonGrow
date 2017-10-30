@@ -36,9 +36,3 @@ VALUES ('pikachu', 2, 13, './img/pikachu.png');
 
 INSERT INTO pokemon_types (type, stage, evolves_into, image_url)
 VALUES ('raichu', 3, NULL, './img/raichu.png');
-
-INSERT INTO pokemons (name, skill, mission, type_id, level, poms, wins, last_session, streak, health, hunger, birthday, user_id) 
-VALUES ('MVC Pikachu', 'Express Routes', 'Make a CRUD app for Project #2', 11, 8, 8, 8, 2017-10-29 16:13:40.700229-04, 3, 67, 39, 2017-10-29 16:13:40.700229-04, 1);
-
-INSERT INTO pokemons (name, skill, mission, type_id, level, poms, wins, last_session, streak, health, hunger, birthday, user_id) 
-VALUES ('Express Squirtle', 'Express Authentication', 'Understanding passport and express-sessions', 8, 9, 9, 8, 2017-10-29 16:13:40.700229-04, 3, 47, 37, 2017-10-29 16:13:40.700229-04, 1);

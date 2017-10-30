@@ -1,0 +1,22 @@
+<% include ../partials/boilerplate %>
+
+    <div class="pokemon-container">
+        <% pokemons.forEach(pokemon => { %>
+            <div class="pokemon">
+                <div class="meta">
+                    <span class="name">Name: <%= pokemon.name %></span><br>
+                    <span class="skill">Skill: <%= pokemon.skill %></span><br>
+                    <img src="./img/<%=pokemon.type%>.png">
+                </div>
+                <h3>
+                    <%= pokemon.level %>
+                        <%= pokemon.poms %>
+                            <%= pokemon.wins %>
+                </h3>
+                <a class="linktosingle " href="/pokemons/<%=pokemon.id %>">See
+                    <%=pokemon.name %>'s profile.</a><br>
+            </div>
+            <% }) %>
+    </div>
+
+    <% include ../partials/end %>
