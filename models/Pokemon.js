@@ -15,9 +15,9 @@ Pokemon.findById = id => {
 Pokemon.create = pokemon => {
     return db.one(
         `INSERT INTO pokemons
-    (name, skill)
-    VALUES ($1, $2)
-    RETURNING *`, [pokemon.name, pokemon.skill]);
+    (name, skill, type)
+    VALUES ($1, $2, $3)
+    RETURNING *`, [pokemon.name, pokemon.skill, pokemon.type]);
 };
 
 Pokemon.update = (pokemon, id) => {

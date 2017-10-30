@@ -1,22 +1,31 @@
 <% include ../partials/boilerplate %>
+    <% include ../auth/login %>
 
-    <div class="pokemon-container">
-        <% pokemons.forEach(pokemon => { %>
-            <div class="pokemon">
-                <div class="meta">
-                    <span class="name">Name: <%= pokemon.name %></span><br>
-                    <span class="skill">Skill: <%= pokemon.skill %></span><br>
-                    <img src="./img/<%=pokemon.type%>.png">
+        <div class="pokemon-container">
+            <br>
+            <% pokemons.forEach(pokemon => { %>
+                <div class="pokemon">
+                    <span class="title">Name:</span>
+                    <span class="name"><%= pokemon.name %></span><br>
+
+                    <span class="title">Skill:</span>
+                    <%= pokemon.skill %><br>
+                        <a class="linktosingle " href="/pokemons/<%=pokemon.id %>"><img src="./img/<%=pokemon.type%>.png" width="300px"></a>
                 </div>
-                <h3>
-                    <%= pokemon.level %>
-                        <%= pokemon.poms %>
-                            <%= pokemon.wins %>
+                <h3><span class="title">Health:</span>
+                    <%= pokemon.health %>
                 </h3>
+                <h3><span class="title">Hunger:</span>
+                    <%= pokemon.hunger %>
+                </h3><br>
                 <a class="linktosingle " href="/pokemons/<%=pokemon.id %>">See
-                    <%=pokemon.name %>'s profile.</a><br>
-            </div>
-            <% }) %>
-    </div>
+                    <%=pokemon.name %>'s profile.</a><br> <br>
 
-    <% include ../partials/end %>
+                <hr><br>
+        </div>
+        <% }) %>
+            </div>
+            <nav>
+                <% include ../partials/nav %>
+            </nav>
+            <% include ../partials/end %>

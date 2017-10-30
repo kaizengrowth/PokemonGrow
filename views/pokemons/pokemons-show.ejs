@@ -1,0 +1,37 @@
+<% include ../partials/boilerplate %>
+    <% include ../auth/login %>
+        <br>
+        <div class="pokemon-single-container">
+            <div class="pokemon">
+                <span class="title">Name:</span>
+                <span class="name"><%= pokemon.name %></span><br>
+
+                <span class="title">Skill:</span>
+                <%= pokemon.skill %><br>
+                    <img src="/img/<%=pokemon.type%>.png" width="300px">
+            </div>
+            <h3><span class="title">Pomodoros:</span>
+                <%= pokemon.poms %>
+            </h3>
+            <h3><span class="title">Streak:</span>
+                <%= pokemon.streak %>
+            </h3>
+            <h3><span class="title">Health:</span>
+                <%= pokemon.health %>
+            </h3>
+            <h3><span class="title">Hunger:</span>
+                <%= pokemon.hunger %>
+            </h3><br>
+            <form class="delete" action="/pokemons/<%= pokemon.id%>?_method=DELETE" method="POST">
+                <input class="dellink" type="submit" value="Delete">
+            </form>
+            <div class="show_links">
+                <a class="editlink" href="/pokemons/<%=pokemon.id%>/edit">Edit</a>
+                <a class="linktosingle" href="/pokemons">Back to all pokemons</a>
+            </div>
+        </div>
+        </div>
+        <nav>
+            <% include ../partials/nav %>
+        </nav>
+        <% include ../partials/end %>

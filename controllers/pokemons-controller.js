@@ -30,6 +30,7 @@ pokemonsController.create = (req, res) => {
     Pokemon.create({
         name: req.body.name,
         skill: req.body.skill,
+        type: req.body.type
     }).then(pokemon => {
         res.redirect(`/pokemons/${pokemon.id}`)
     }).catch(err => {

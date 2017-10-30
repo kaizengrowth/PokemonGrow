@@ -25,11 +25,19 @@ p {
     color: darkblue;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
 
 /* ===== Bottom Navigation Styling ===== */
 
 nav ul {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     padding-left: 1px;
     padding-right: 11px;
@@ -92,7 +100,7 @@ form input {
     padding: 5px;
 }
 
-div a {
+.add a {
     font-size: 13px;
     text-decoration: none;
     color: white;
@@ -100,7 +108,7 @@ div a {
     right: 8px;
 }
 
-a:hover {
+.add a:hover {
     color: yellow;
 }
 
@@ -131,4 +139,26 @@ a:hover {
 
 #frontpage {
     margin-top: -20px;
+}
+
+
+/* ===== Pokemons Index ===== */
+
+.title {
+    font-weight: 700;
+    font-size: 18px;
+    color: green;
+}
+
+.name {
+    font-size: 32px;
+}
+
+.show_links {
+    display: flex;
+    display: space-around;
+}
+
+.show_links a {
+    flex: 1;
 }

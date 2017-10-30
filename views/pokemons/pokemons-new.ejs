@@ -1,0 +1,26 @@
+<% include ../partials/boilerplate %>
+    <% include ../auth/login %>
+        <br>
+
+        <div class="form-page">
+            <div class="add">
+                <form action="/pokemons" id="pokemonform" method="POST"><br>
+                    <input type="text" name="name" placeholder="Name" /><br>
+                    <input type="text" name="skill" placeholder="Skill you want to master" /><br>
+                    <select name="type" form="pokemonform">
+                            <option value="bulbasaur">Bulabsaur</option>
+                            <option value="squirtle">Squirtle</option>
+                            <option value="charzar">Charzar</option>
+                            <option value="pikachu">Pikachu</option>
+                    </select>
+                    <input type="submit" value="Add it!" /><br>
+                </form>
+            </div>
+
+            <a href="/pokemons">Back to all pokemon</a><br>
+
+        </div>
+        <nav>
+            <% include ../partials/nav %>
+        </nav>
+        <% include ../partials/end %>

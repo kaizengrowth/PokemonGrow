@@ -1,0 +1,17 @@
+<% include ../partials/boilerplate %>
+    <% include ../auth/login %>
+        <br>
+        <div class="edit-page">
+            <div class="edit">
+                <form action="/pokemons/<%= pokemon.id%>?_method=PUT" method="POST">
+                    Name: <input type="text" name="name" placeholder="Name" value="<%= pokemon.name %>" /><br> Skill: <input type="text" name="skill" placeholder="Skill" value="<%= pokemon.skill %>" /><br>
+                    <input type="submit" value="Edit my pokemon!" />
+            </div>
+            </form>
+            <br>
+            <a href="/pokemons/<%=pokemon.id %>">Back to profile.</a>
+        </div>
+        <nav>
+            <% include ../partials/nav %>
+        </nav>
+        <% include ../partials/end %>
