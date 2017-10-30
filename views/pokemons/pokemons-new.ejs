@@ -1,16 +1,16 @@
 <% include ../partials/boilerplate %>
     <% include ../auth/login %>
         <br>
-
-        <div class="form-page">
+        <img src='/img/newborn.png' width="300px">
+        <div class="new-page">
             <div class="add">
                 <form action="/pokemons" id="pokemonform" method="POST"><br>
-                    <input type="text" name="name" placeholder="Name" /><br>
-                    <input type="text" name="skill" placeholder="Skill you want to master" /><br>
+                    <input type="text" name="name" placeholder="Name your pokemon" /><br>
+                    <input type="text" name="skill" placeholder="Skill to master" /><br>
                     <select name="type" form="pokemonform">
                             <option value="bulbasaur">Bulabsaur</option>
                             <option value="squirtle">Squirtle</option>
-                            <option value="charzar">Charzar</option>
+                            <option value="charzar">Charmander</option>
                             <option value="pikachu">Pikachu</option>
                     </select>
                     <input type="submit" value="Add it!" /><br>

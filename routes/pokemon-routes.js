@@ -6,7 +6,7 @@ const pokemonsController = require('../controllers/pokemons-controller');
 pokemonsRouter.get('/', pokemonsController.index);
 
 pokemonsRouter.get('/new', (req, res) => {
-    res.render('/pokemons/pokemons-new');
+    res.render('./pokemons/pokemons-new');
 });
 
 pokemonsRouter.post('/', pokemonsController.create);

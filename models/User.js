@@ -9,19 +9,19 @@ User.findByUserName = (userName) => {
     `, [userName]);
 }
 
-User.findUserPokemon = (userId) => {
-    return db.manyOrNone(`
-        SELECT * FROM pokemons
-        WHERE user_id = $1
-    `, [userId]);
-};
+// User.findUserPokemon = (userId) => {
+//     return db.manyOrNone(`
+//         SELECT * FROM pokemons
+//         WHERE user_id = $1
+//     `, [userId]);
+// };
 
-User.findUserScrum = (userId) => {
-    return db.manyOrNone(`
-        SELECT * FROM scrums
-        WHERE user_id = $1
-    `, [userId]);
-};
+// User.findUserScrum = (userId) => {
+//     return db.manyOrNone(`
+//         SELECT * FROM scrums
+//         WHERE user_id = $1
+//     `, [userId]);
+// };
 
 User.create = (user) => {
     return db.one(`
