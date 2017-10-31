@@ -22,14 +22,14 @@ app.use(cookieParser());
 app.use(session({
     secret: process.env.SECRET_KEY,
     resave: false,
-    saveUnitialized: true,
+    saveUninitialized: true,
 }));
 app.use(passport.initialize());
 app.use(passport.session());
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log('Listening on port ${PORT}');
+    console.log(`Listening on port ${PORT}`);
 });
 
 app.use('/static', express.static(path.join(__dirname, 'public')))

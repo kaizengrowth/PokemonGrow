@@ -162,3 +162,106 @@ form input {
 .show_links a {
     flex: 1;
 }
+
+
+/* ===== Pokeball Pomodoro ===== */
+
+@-webkit-keyframes spinning {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes color-change {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        background-color: gold;
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        background-color: #f00;
+    }
+}
+
+#pokeball-container {
+    width: 15em;
+    height: 15em;
+    margin: 20px auto;
+    -webkit-animation: spinning 60s linear infinite;
+}
+
+#pokeball {
+    width: 12em;
+    height: 12em;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+#pokeball::before {
+    content: '';
+    background-color: red;
+    border-radius: 5em 10em 5em 5em;
+    width: 15em;
+    height: 18em;
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+#pokeball .pokeball-details {
+    width: 35em;
+    height: 1.2em;
+    background-color: green;
+    position: absolute;
+    top: 6em;
+    left: 1em;
+}
+
+#pokeball .pokeball-details::before {
+    content: '';
+    width: 4.4em;
+    height: 4.4em;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    top: -1.25em;
+    left: 3em;
+    z-index: 200;
+}
+
+#pokeball .pokeball-details::after {
+    content: '';
+    width: 2em;
+    height: 2em;
+    border: 0.7em solid gold;
+    border-radius: 50%;
+    position: absolute;
+    top: -0.65em;
+    left: 3.80em;
+    margin: 0 auto;
+    z-index: 250;
+    -webkit-animation: color-change 4s linear infinite;
+}
+
+#clock h1 {
+    font-size: 34px;
+    color: red;
+}
+
+#time {
+    font-size: 25px;
+    color: black;
+}

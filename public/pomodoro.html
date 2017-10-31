@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>Pokemon Battle!</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="form-page">
+        <div class="add">
+            <form method='POST' action='/auth/login'>
+                <input name='username' type='text' placeholder='username' required />
+                <input name='password' type='password' placeholder='password' required />
+                <input type='submit' class="button" value='Log in!' />
+            </form>
+            <a href="./register"> I'm a New Trainer! </a>
+        </div>
+        <br>
+    </div>
+    <center>
+        <div id="pokeball-container">
+            <div id="pokeball">
+                <div class="pokeball-details"></div>
+            </div>
+        </div>
+        <div id="clock">
+            <h1>Pomodoro Timer:</h1>
+            <h2 id="time"></h2>
+        </div>
+    </center>
+    <nav>
+        <ul>
+            <a class="linktosingle" href="/pokemons">
+                <li>
+                    <div class="nav_link">
+                        Pokédex <br>
+                        <img src="/img/pokedex.png" width="65px">
+                    </div>
+                </li>
+            </a>
+            <a href="/">
+                <li>
+                    <div class="nav_link">
+                        <img src="/img/pokeball.png" width="60px"><br>
+                        <span id="timer"> Battle Timer </span>
+                    </div>
+                </li>
+            </a>
+            <a href="/pokemons/new">
+                <li>
+                    <div class="nav_link">
+                        Backpack <br>
+                        <img src="/img/backpack.png" width="35px">
+                    </div>
+                </li>
+            </a>
+        </ul>
+        <br>
+    </nav>
+</body>
+
+</html>

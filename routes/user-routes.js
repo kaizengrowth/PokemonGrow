@@ -5,4 +5,8 @@ const authHelpers = require('../services/auth/auth-helpers');
 
 userRouter.get('/', authHelpers.loginRequired, usersController.index);
 
+userRouter.get('/pomodoro', (req, res) => {
+    res.render('./users/users-pomodoro');
+});
+
 module.exports = userRouter;
