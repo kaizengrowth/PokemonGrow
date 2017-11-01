@@ -1,0 +1,8 @@
+<svg class="background">
+  <g x="50%" y="50%" pointer-events="visible" transform="translate(50%,50%)">
+      <animateTransform attributeType="rotate" from="0" to="360" begin="click" dur="1" repeatCount="indefinite" />
+     <image x="$-100" y="$-100" width="200" height="200" href = "Poké_Ball.svg.png" />
+  </g>
+    <text id="myLabel" />
+<!--   <text id="time" x="50%" y="50%"></text> -->
+</svg>
