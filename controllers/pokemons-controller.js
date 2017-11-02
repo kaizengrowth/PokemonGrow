@@ -1,4 +1,4 @@
-const Pokemon = require('../models/pokemon');
+const Pokemon = require('../models/Pokemon');
 const moment = require('moment');
 
 const pokemonsController = {};
