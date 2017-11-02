@@ -1,7 +1,7 @@
 # PokemonGrow
-Project #2 (General Assembly Web Development Intensive) -- a web pomodoro app integrated with Fitbit API that helps you ingrain good habits and master new skills by visualizing your time spent practicing in the form of your own skill-evolving pocket pokemon. 
+Project #2 (General Assembly Web Development Intensive) -- a web pomodoro app integrated with Fitbit API that helps you ingrain good habits and master new skills. With each half-hour you spend practicing your skill, you can watch your pocket pokemon grow and evolve!
 
-Think: tamagotchi crossed with pomodoro timer!
+Think: tamagotchi crossed with a pomodoro timer and skills tracker!
 
 
 
@@ -13,7 +13,7 @@ Here were the original wireframes I used when conceptualizing this app and its d
 
 ![Data Model, Game Logic](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/wireframes/data_model.jpg "Data Model, Game Logic")
 
-User stories:
+### User stories:
 
   1. User can create a login account.
   2. User can login with valid authentication details, and her password is encrypted on the server.
@@ -21,23 +21,23 @@ User stories:
   4. User can see all her pokemon in her Pokedex.
   5. User can use the Pokeball to time a pomodoro worth of practice in her chosen skill.
   6. User can access the Pokemon app on the Fitbit.
-  *7. User's Fitbit can access data in JSON formatted from the deployed pokemon app.
-  *8. Pomodoro game logic - user's pokemon gains XP points and "evolves" as user practices skill. 
-  *9. Habit streaks - user's pokemon increase in hunger every day since creation date, and the hunger can be assuaged with pomodoros.
-  *10. Pocket pokemon - user's pokemon animates happily on the Fitbit app like an old school Tamagotchi.
+  7. User's Fitbit can access data in JSON formatted from the deployed pokemon app.
+  8. Pomodoro game logic - user's pokemon gains XP points and "evolves" as user practices skill. 
+  9. Habit streaks - user's pokemon increase in hunger every day since creation date, and the hunger can be assuaged with pomodoros.
+  10. Pocket pokemon - user's pokemon animates happily on the Fitbit app like an old school Tamagotchi.
  
-Future user stories:
-  *11. Geolocation is tracked on Fitbit with analytics dashboard on the locations and times when user is most productive.
-  *12. Analytics dashboard of practice times, habit streaks, and productivity.
-  *13. Fitbit exercise is logged directly into the app.
+### Future user stories:
+  11. Geolocation is tracked on Fitbit with analytics dashboard on the locations and times when user is most productive.
+  12. Analytics dashboard of practice times, habit streaks, and productivity.
+  13. Fitbit exercise is logged directly into the app.
 
 
-* Plan to fix or add.
+* Plan to fix or add (7-13)
 
 
 ## /// === **Technologies & API's** === ///
 
-I am really excited to get to play around with the open source Fitbit Studio. The dev documentation for FitBit is very clear and easy to follow along, and I enjoyed creating views. Within Fitbit, there is a communication API and a messaging API that uses web sockets, and can be used to fetch data from the Pokemon Pomodoro web server. I formatted the response in my user-controller so that it can display JSON data, but am not able to get the Fitbit to display this data in the time frame allowed for this project.
+I am really excited to have the chance to play around with the open source Fitbit Studio! Within Fitbit, there is a communication API and a messaging API that uses web sockets, and can be used to fetch data from the Pokemon Pomodoro web server. I formatted the response in my user-controller so that it can display JSON data, but am not able to get the Fitbit to display this data in the time frame allowed for this project.
 
 ![Fitbit Load Screen](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/myfitbitapp_loadscreen.jpg "Fitbit App Load Screen")
 
@@ -75,10 +75,9 @@ function displayTime(seconds) {
 }
 
 function timeOut() {
-    console.log("Time out!");
+    alert("Time out!");
     clearInterval(countDown);
     addPoints();
-    console.log(minutes, pomodoros, shortbreaks, longbreaks, isPomodoro);
 };
 
 $(document).ready(function() {
@@ -97,9 +96,49 @@ $(document).ready(function() {
 
 ## /// === **How-to-use instructions** === ///
 
-You can download this file on Github, install dependencies in node, and run the app with Nodemon; or use the current deployed version of the app, here:
+You can download this file on Github, install dependencies in node, and run the app with npm; or use the current deployed version of the app, here:
 https://immense-springs-58058.herokuapp.com
 
 The game is created to encourage users to practice skills or master habits that require a lot of time commitment over an extended period of time! This app is especially designed for kids who may need to spend a certain number of hours per week on a particular subject. Nostalgic for the old school pomodoros, my goal was to create a digital pet on a Fitbit watch that would bounce around and grow as the user logs more "practice time" into the pomodoro timer. 
 
 According to Malcolm Gladwell's (oft-disputed) evangelism on ninja skill mastery -- it takes about 10,000 hours to truly "master" any skill. My plan is to spend at least another tenth of that amount mastering the Fitbit API and launching a full version of this app in the future to the Fitbit app-store.
+
+
+
+## /// === **Screenshots for Mobile Responsive Version of Web App** === ///
+
+### Index Home Screen
+
+![Index Home Screen](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/screenshots/Index.png "Index Home Screen")
+
+---
+
+
+
+### Show All User's Pokemon Screen
+
+![Show All User's Pokemon Screen](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/screenshots/ShowAllPokemonByUser.png "Show All Users' Pokemon")
+
+---
+
+
+
+### Show One Pokemon's Stats Screen
+
+![Show One Pokemon's Stats](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/screenshots/ShowOnePokemon.png "Show One Pokemon's Stats")
+
+---
+
+
+
+### Pomodoro Timer with 60-second Spinning Pokeball Clock
+
+![Pomodoro Timer Spinning Ball](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/screenshots/Pomodoro.png "Pomodoro Timer Spinning Ball")
+
+---
+
+
+
+### Create New Pokemon
+
+![Create New Pokemon](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/screenshots/CreateNewPokemon.png "Create New Pokemon")
