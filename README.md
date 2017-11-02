@@ -1,9 +1,24 @@
-# PokemonGrow
-Project #2 (General Assembly Web Development Intensive) -- a web pomodoro app integrated with Fitbit API that helps you ingrain good habits and master new skills. With each half-hour you spend practicing your skill, you can watch your pocket pokemon grow and evolve!
+# "PokemonGrow"  
+### General Assembly Web Development Intensive, Project 2
+
+Train to be your very best with a Pokemon sidekick! This is a web pomodoro app integrated with Fitbit API that helps you ingrain good habits and master new skills. With each passing half-hour that you spend practicing your skill, you can watch your Pokemon grow and evolve!
 
 Think: tamagotchi crossed with a pomodoro timer and skills tracker!
 
 ![Screenshots](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/screenshots/allScreens.jpg "Screenshots of My App")
+
+
+
+## /// === **Technologies & API's** === ///
+
+I am really excited to get the chance to play around with the open source Fitbit Studio! Within Fitbit, there is a communication API and a messaging API that uses web sockets, and can be used to fetch data from the Pokemon Pomodoro web server. I formatted the response in my user-controller so that it can display JSON data, but am not able to get the Fitbit to display this data in the time frame allowed for this project.
+
+![Fitbit Load Screen](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/myfitbitapp_loadscreen.jpg "Fitbit App Load Screen")
+
+In addition to Express routes and the Node modules we have explored in class, I am also using MomentJS to parse StartDate. I've played around with the Pokemon public API to randomly generate pokemon, but decided to instead constrain my database to a limited number of preselected pokemon.
+
+![Fitbit Pomodoro Timer](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/fitbitapp_spinningtimer.jpg "Fitbit Spinning Pomodoro TImer")
+
 
 
 
@@ -36,16 +51,6 @@ Here were the original wireframes I used when conceptualizing this app and its d
 
 * Plan to fix or add (7-13)
 
-
-## /// === **Technologies & API's** === ///
-
-I am really excited to have the chance to play around with the open source Fitbit Studio! Within Fitbit, there is a communication API and a messaging API that uses web sockets, and can be used to fetch data from the Pokemon Pomodoro web server. I formatted the response in my user-controller so that it can display JSON data, but am not able to get the Fitbit to display this data in the time frame allowed for this project.
-
-![Fitbit Load Screen](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/myfitbitapp_loadscreen.jpg "Fitbit App Load Screen")
-
-In addition to Express routes and the Node modules we have explored in class, I am also using MomentJS to parse StartDate. I've played around with the Pokemon public API to randomly generate pokemon, but decided to instead constrain my database to a limited number of preselected pokemon.
-
-![Fitbit Pomodoro Timer](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/fitbitapp_spinningtimer.jpg "Fitbit Spinning Pomodoro TImer")
 
 
 ## /// === ** Favorite Code Snippet ** === ///
@@ -101,6 +106,6 @@ $(document).ready(function() {
 You can download this file on Github, install dependencies in node, and run the app with npm; or use the current deployed version of the app, here:
 https://immense-springs-58058.herokuapp.com
 
-The game is created to encourage users to practice skills or master habits that require a lot of time commitment over an extended period of time! This app is especially designed for kids who may need to spend a certain number of hours per week on a particular subject. Nostalgic for the old school pomodoros, my goal was to create a digital pet on a Fitbit watch that would bounce around and grow as the user logs more "practice time" into the pomodoro timer. 
+The game is created to encourage users to practice skills or master habits that require a lot of time commitment over an extended period of time! This app is especially designed for kids who may need to spend a certain number of hours per week on a particular subject. Nostalgic for the old school tamagatchi "digital pets", my goal was to create a Fitbit "pet" on your smartwatch that would bounce around and "grow" as you log more "practice time" into the pomodoro timer. 
 
 According to Malcolm Gladwell's (oft-disputed) evangelism on ninja skill mastery -- it takes about 10,000 hours to truly "master" any skill. My plan is to spend at least another tenth of that amount mastering the Fitbit API and launching a full version of this app in the future to the Fitbit app-store.
