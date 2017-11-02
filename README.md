@@ -75,10 +75,9 @@ function displayTime(seconds) {
 }
 
 function timeOut() {
-    console.log("Time out!");
+    alert("Time out!");
     clearInterval(countDown);
     addPoints();
-    console.log(minutes, pomodoros, shortbreaks, longbreaks, isPomodoro);
 };
 
 $(document).ready(function() {
