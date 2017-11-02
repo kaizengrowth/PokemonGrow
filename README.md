@@ -105,6 +105,8 @@ $(document).ready(function() {
 You can download this file on Github, install dependencies in node, and run the app with npm; or use the current deployed version of the app, here:
 https://immense-springs-58058.herokuapp.com
 
-The game is created to encourage users to practice skills or master habits that require a lot of time commitment over an extended period of time! This app is especially designed for kids who may need to spend a certain number of hours per week on a particular subject. Nostalgic for the old school tamagatchi "digital pets", my goal is to create a Fitbit "pet" on your smartwatch that would bounce around and "grow" as you log more "practice time" into the pomodoro timer. 
+The game is created to encourage users to practice skills or master habits that require a lot of time commitment over an extended period of time! This app is especially designed for kids who may need to spend a certain number of hours per week on a particular subject. 
+
+Nostalgic for the old school tamagatchi "digital pets", my goal is to create a Fitbit "pet" on your smartwatch that would bounce around and "grow" as you log more practice time into your pomodoro pokemon sidekick. 
 
 According to Malcolm Gladwell's (oft-disputed) evangelism on ninja skill mastery -- it takes about 10,000 hours to truly "master" any skill. My plan is to spend at least another tenth of that amount mastering the Fitbit API and launching a full version of this app in the future to the Fitbit app-store.
