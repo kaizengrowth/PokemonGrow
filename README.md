@@ -77,9 +77,9 @@ function displayTime(seconds) {
 }
 
 function timeOut() {
-    alert("Time out!");
     clearInterval(countDown);
     addPoints();
+    alert("Time out!");
 };
 
 $(document).ready(function() {
