@@ -15,9 +15,9 @@ I am really excited to get the chance to play around with the open source Fitbit
 
 ![Fitbit Load Screen](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/myfitbitapp_loadscreen.jpg "Fitbit App Load Screen")
 
-In addition to Express routes and the Node modules we have explored in class, I am also using MomentJS to parse dates and timestamps. I played around with the Pokemon DB public API to randomly generate pokemon and connect them along pokemon evolution charts, but later decided instead to constrain my database to a limited number of preselected pokemon.
+In addition to Express routes and the Node modules we have explored in class, I used MomentJS to parse dates and timestamps. I played around with the Pokemon DB public API to randomly generate pokemon and connect them along pokemon evolution charts, but later decided instead to constrain my database to a limited number of preselected pokemon.
 
-I used Heroku to deploy this web app with a PostgreSQL database. The server and routes were created with the Express application framework, on the Node.js Javascript runtime. Other dependencies include BcryptJS for hashing passwords and Passport for authentification, Morgan as a logger, Nodeman for monitoring changes on the server, jQuery for user interface interactions, and various Node modules.
+I used Heroku to deploy this web app with a PostgreSQL database. The server and routes were created with the Express application framework, on the Node.js Javascript runtime. Other dependencies include BcryptJS for hashing passwords and Passport for authentification, Morgan as a logger, Nodeman for monitoring changes on the server, jQuery for user interface interactions, and various Node modules. I used Adobe Photoshop, Illustrator, and some pure CSS to create pictures and vector svg's on the web app and Fitbit.
 
 ![Fitbit Pomodoro Timer](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/fitbitapp_spinningtimer.jpg "Fitbit Spinning Pomodoro TImer")
 
