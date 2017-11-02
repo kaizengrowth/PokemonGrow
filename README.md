@@ -57,7 +57,7 @@ Here were the original wireframes I used when conceptualizing this app and its d
 
 
 
-## /// === ** Favorite Code Snippet ** === ///
+## /// === **Favorite Code Snippet** === ///
 
 There are lots of little snippets that I enjoyed putting together, but here's a simple pomodoro countdown function in Javascript:
 
