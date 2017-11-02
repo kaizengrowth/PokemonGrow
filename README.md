@@ -3,6 +3,8 @@ Project #2 (General Assembly Web Development Intensive) -- a web pomodoro app in
 
 Think: tamagotchi crossed with a pomodoro timer and skills tracker!
 
+![Screenshots](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/screenshots/allScreens.jpg "Screenshots of My App")
+
 
 
 ## /// === **Wireframes and User Stories** === ///
@@ -102,43 +104,3 @@ https://immense-springs-58058.herokuapp.com
 The game is created to encourage users to practice skills or master habits that require a lot of time commitment over an extended period of time! This app is especially designed for kids who may need to spend a certain number of hours per week on a particular subject. Nostalgic for the old school pomodoros, my goal was to create a digital pet on a Fitbit watch that would bounce around and grow as the user logs more "practice time" into the pomodoro timer. 
 
 According to Malcolm Gladwell's (oft-disputed) evangelism on ninja skill mastery -- it takes about 10,000 hours to truly "master" any skill. My plan is to spend at least another tenth of that amount mastering the Fitbit API and launching a full version of this app in the future to the Fitbit app-store.
-
-
-
-## /// === **Screenshots for Mobile Responsive Version of Web App** === ///
-
-### Index Home Screen
-
-![Index Home Screen](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/screenshots/Index.png "Index Home Screen")
-
----
-
-
-
-### Show All User's Pokemon Screen
-
-![Show All User's Pokemon Screen](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/screenshots/ShowAllPokemonByUser.png "Show All Users' Pokemon")
-
----
-
-
-
-### Show One Pokemon's Stats Screen
-
-![Show One Pokemon's Stats](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/screenshots/ShowOnePokemon.png "Show One Pokemon's Stats")
-
----
-
-
-
-### Pomodoro Timer with 60-second Spinning Pokeball Clock
-
-![Pomodoro Timer Spinning Ball](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/screenshots/Pomodoro.png "Pomodoro Timer Spinning Ball")
-
----
-
-
-
-### Create New Pokemon
-
-![Create New Pokemon](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/screenshots/CreateNewPokemon.png "Create New Pokemon")
