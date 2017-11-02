@@ -1,6 +1,5 @@
 const bcrypt = require('bcryptjs');
 
-// will always return either true or false
 function comparePass(userPassword, databasePassword) {
     return bcrypt.compareSync(userPassword, databasePassword);
 }

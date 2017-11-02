@@ -1,4 +1,5 @@
 const Pokemon = require('../models/pokemon');
+const moment = require('moment');
 
 const pokemonsController = {};
 
@@ -27,10 +28,14 @@ pokemonsController.show = (req, res) => {
 };
 
 pokemonsController.create = (req, res) => {
+    console.log('HELLO', req.user);
     Pokemon.create({
         name: req.body.name,
         skill: req.body.skill,
-        type: req.body.type
+        type: req.body.type,
+        birthday: moment(Date.now()).format('YYYY-MM-DD HH:mm:ss'),
+        last_session: moment(Date.now()).format('YYYY-MM-DD HH:mm:ss'),
+        user_id: req.user.id
     }).then(pokemon => {
         res.redirect(`/pokemons/${pokemon.id}`)
     }).catch(err => {

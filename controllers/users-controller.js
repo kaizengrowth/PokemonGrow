@@ -3,27 +3,18 @@ const User = require('../models/User');
 
 const usersController = {};
 
-// usersController.index = (req, res) => {
-//     User.findUserScrums(req.user.id)
-//         .then(scrums => {
-//             res.render('user/user-index', {
-//                 user: req.user,
-//                 scrums: scrums,
-//                 auth: (req.user) ? true : false,
-//             })
-//         }).catch(err => {
-//             console.log(err);
-//             res.status(500).json(err);
-//         });
-// };
-
 usersController.index = (req, res) => {
-    res.json({
-        message: 'Put a user profile page on this route',
-        data: {
-            user: req.user,
-        },
-    });
+    User.findUserPokemon(req.user.id)
+        .then(pokemons => {
+            res.render('user/user-index', {
+                user: req.user,
+                pokemons: pokemons,
+                auth: (req.user) ? true : false,
+            })
+        }).catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
 };
 
 usersController.create = (req, res, next) => {

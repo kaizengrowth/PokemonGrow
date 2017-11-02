@@ -218,7 +218,7 @@ form input {
     width: 15em;
     height: 18em;
     position: absolute;
-    transform: rotate(180deg);
+    transform: rotate(180deg)
 }
 
 #pokeball .pokeball-details {

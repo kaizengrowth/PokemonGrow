@@ -27,6 +27,11 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use((req, res, next) => {
+    res.locals.user = req.user || null;
+    next();
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
@@ -44,6 +49,7 @@ const authRoutes = require('./routes/auth-routes');
 app.use('/auth', authRoutes);
 const userRoutes = require('./routes/user-routes');
 app.use('/user', userRoutes);
+
 const pokemonRoutes = require('./routes/pokemon-routes');
 app.use('/pokemons', pokemonRoutes);
 

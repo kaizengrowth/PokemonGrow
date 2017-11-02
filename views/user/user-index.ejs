@@ -1,0 +1,42 @@
+<% include ../partials/boilerplate %>
+    <% include ../auth/login %>
+
+        <div class="user-info">
+            <div class="info-container">
+                <h3>Welcome back,
+                    <%= user.firstname %>
+                        <%= user.lastname %>!</h3>
+                <p class="numberlist">Here are all your pokemon:</p>
+            </div>
+        </div>
+        <br>
+
+        <div class="pokemon-container">
+            <br>
+            <% pokemons.forEach(pokemon => { %>
+                <div class="pokemon">
+                    <span class="title">Name:</span>
+                    <span class="name"><%= pokemon.name %></span><br>
+
+                    <span class="title">Skill:</span>
+                    <%= pokemon.skill %><br>
+                        <a class="linktosingle " href="/pokemons/<%=pokemon.id %>"><img src="./img/<%=pokemon.type%>.png" width="300px"></a>
+                        <h3><span class="title">Health:</span>
+                            <%= pokemon.health %>
+                        </h3>
+                        <h3><span class="title">Hunger:</span>
+                            <%= pokemon.hunger %>
+                        </h3><br>
+                        <a class="linktosingle " href="/pokemons/<%=pokemon.id %>">See
+                        <%=pokemon.name %>'s profile.</a><br> <br>
+                        <hr><br>
+                </div>
+                <% }) %>
+        </div>
+
+        <br>
+
+        <nav>
+            <% include ../partials/nav %>
+        </nav>
+        <% include ../partials/end %>
