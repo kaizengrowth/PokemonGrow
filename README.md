@@ -26,6 +26,8 @@ I used Heroku to deploy this web app with a PostgreSQL database. The server and 
 
 ## /// === **Wireframes and User Stories** === ///
 
+_Build Time:_ 4 days 
+
 Here were the original wireframes I used when conceptualizing this app and its data model.
 
 ![Wireframes](https://github.com/kaizenagility/PokemonGrow/blob/master/wireframes/wireframes/wireframe.jpg "Wireframe")
