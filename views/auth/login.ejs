@@ -10,6 +10,8 @@
                 <a href="./register"> I'm a New Trainer! </a>
                 <% } else { %>
                     <form method='GET' action='/auth/logout'>
+                        <span id="hello">Hi
+                            <%= user.username %>!</span>
                         <a href="/"><img src='/img/GrowPokemon.png' width="150px" /></a>
                         <input type='submit' class="button_logout" value='Log out!' />
                     </form>

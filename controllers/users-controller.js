@@ -6,11 +6,19 @@ const usersController = {};
 usersController.index = (req, res) => {
     User.findUserPokemon(req.user.id)
         .then(pokemons => {
-            res.render('user/user-index', {
-                user: req.user,
-                pokemons: pokemons,
-                auth: (req.user) ? true : false,
-            })
+            res.format({
+                'text/html': function() {
+                    res.render('user/user-index', {
+                        user: req.user,
+                        pokemons: pokemons,
+                        auth: (req.user) ? true : false,
+                    })
+                },
+
+                'application/json': function() {
+                    res.send({ pokemons: pokemons, });
+                }
+            });
         }).catch(err => {
             console.log(err);
             res.status(500).json(err);

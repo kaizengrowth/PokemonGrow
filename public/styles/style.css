@@ -129,6 +129,12 @@ form input {
     border-radius: 12px;
 }
 
+#hello {
+    margin-left: -150px;
+    color: gold;
+    font-size: 18px;
+}
+
 .button_logout {
     margin-bottom: -20px;
     border: 1px dotted gray;
