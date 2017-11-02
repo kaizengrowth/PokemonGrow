@@ -63,9 +63,6 @@ There are lots of little snippets that I enjoyed putting together, but here's a 
 
 let minutes = 25;
 let seconds = minutes * 60;
-let pomodoros = 0;
-let shortbreaks = 0;
-let longbreaks = 0;
 let isPomodoro = true;
 
 function displayTime(seconds) {
