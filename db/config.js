@@ -6,17 +6,17 @@ const options = {
 
 const pgp = require('pg-promise')(options);
 
-let db;
+const db = setDatabase();
 
 function setDatabase() {
     if (process.env.NODE_ENV === 'development' || !process.env.NODE_ENV) {
-        db = pgp({
+        return pgp({
             database: 'pokemon_grow',
             port: 5432,
             host: 'localhost',
         });
     } else if (process.env.NODE_ENV === 'production') {
-        db = pgp(process.env.DATABASE_URL);
+        return pgp(process.env.DATABASE_URL);
     }
 }
 
