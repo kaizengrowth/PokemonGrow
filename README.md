@@ -48,7 +48,7 @@ Here were the original wireframes I used when conceptualizing this app and its d
 ### Future user stories:
   11. Geolocation is tracked on Fitbit with analytics dashboard on the locations and times when user is most productive.
   12. Analytics dashboard of practice times, habit streaks, and productivity.
-  13. Fitbit exercise is logged directly into the app.
+  13. Fitbit exercise is logged directly into the Pokemon stats with heartrate, steps taken, calories burned, and other sensor data.
 
 
 * Plan to fix or add (7-13)
