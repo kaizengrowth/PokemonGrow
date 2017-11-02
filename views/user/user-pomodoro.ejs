@@ -1,0 +1,71 @@
+<% include ../partials/boilerplate %>
+    <% include ../auth/login %>
+
+        <!-- <% <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> %>
+            <%    <script src="../public/script.js"></script> %> -->
+
+        <div class="user-info">
+            <div class="info-container">
+                <h3>Train to be a Master
+                    <%= user.firstname %>
+                        <%= user.lastname %>!</h3>
+                <p class="numberlist">Do one pomodoro:</p>
+            </div>
+        </div>
+        <br>
+
+        </div>
+        <center>
+            <div id="pokeball-container"></div>
+            <div id="clock">
+                <h1>Pomodoro Timer:</h1>
+                <h2 id="time"></h2>
+            </div>
+            <div id="score">
+                <h4>Counter:</h4>
+                <h3 id="pom_complete">0</h3>
+            </div>
+        </center>
+
+        <!-- <% let minutes = 25;
+        let seconds = minutes * 60;
+        let pomodoros = 0;
+        let shortbreaks = 0;
+        let longbreaks = 0;
+        let isPomodoro = true;
+        
+        function displayTime(seconds) {
+            let displayMinutes = Math.floor(seconds / 60);
+            let displaySeconds = seconds % 60;
+        
+            if (displayMinutes < 10) {
+                displayMinutes = "0" + displayMinutes;
+            }
+        
+            if (displaySeconds < 10) {
+                displaySeconds = "0" + displaySeconds;
+            }
+        
+            $("#time").text(displayMinutes + ":" + displaySeconds);
+        }
+        
+        function timeOut() {
+            console.log("Time out!");
+            clearInterval(countDown);
+            addPoints();
+            console.log(minutes, pomodoros, shortbreaks, longbreaks, isPomodoro);
+        };
+        
+        $(document).ready(function() { let countDown = setInterval(function() {
+            displayTime(seconds);
+            seconds--;
+            if (seconds === 0) {
+                return timeOut();
+            }
+        }, 1000);
+    }); %> -->
+
+        <nav>
+            <% include ../partials/nav %>
+        </nav>
+        <% include ../partials/end %>

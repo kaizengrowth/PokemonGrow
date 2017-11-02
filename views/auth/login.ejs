@@ -1,12 +1,20 @@
 <% include ../partials/boilerplate %>
     <div class="form-page">
         <div class="add">
-            <form method='POST' action='/auth/login'>
-                <input name='username' type='text' placeholder='username' required />
-                <input name='password' type='password' placeholder='password' required />
-                <input type='submit' class="button" value='Log in!' />
-            </form>
-            <a href="./register"> I'm a New Trainer! </a>
+            <% if(!user) { %>
+                <form method='POST' action='/auth/login'>
+                    <input name='username' type='text' placeholder='username' required />
+                    <input name='password' type='password' placeholder='password' required />
+                    <input type='submit' class="button" value='Log in!' />
+                </form>
+                <a href="./register"> I'm a New Trainer! </a>
+                <% } else { %>
+                    <form method='GET' action='/auth/logout'>
+                        <a href="/"><img src='/img/GrowPokemon.png' width="150px" /></a>
+                        <input type='submit' class="button_logout" value='Log out!' />
+                    </form>
+                    <% } %>
+
         </div>
         <br>
     </div>

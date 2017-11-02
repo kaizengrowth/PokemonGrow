@@ -17,6 +17,12 @@ usersController.index = (req, res) => {
         });
 };
 
+usersController.pomodoro = (req, res) => {
+    res.render('user/user-pomodoro', {
+        auth: (req.user) ? true : false,
+    });
+}
+
 usersController.create = (req, res, next) => {
     const salt = bcrypt.genSaltSync();
     const hash = bcrypt.hashSync(req.body.password, salt);

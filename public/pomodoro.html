@@ -9,14 +9,14 @@
 
 <body>
     <div class="form-page">
-        <div class="add">
-            <form method='POST' action='/auth/login'>
-                <input name='username' type='text' placeholder='username' required />
-                <input name='password' type='password' placeholder='password' required />
-                <input type='submit' class="button" value='Log in!' />
-            </form>
-            <a href="./register"> I'm a New Trainer! </a>
-        </div>
+        <center>
+            <div class="add">
+                <form method='GET' action='/auth/logout'>
+                    <img src='/img/GrowPokemon.png' width="150px" />
+                    <input type='submit' class="button_logout" value='Log out!' />
+                </form>
+            </div>
+        </center>
         <br>
     </div>
     <center>
@@ -28,6 +28,11 @@
         <div id="clock">
             <h1>Pomodoro Timer:</h1>
             <h2 id="time"></h2>
+        </div>
+        <br>
+        <div id="score">
+            <h4>Counter:</h4>
+            <h3 id="pom_complete">0</h3>
         </div>
     </center>
     <nav>
